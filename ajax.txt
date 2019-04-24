@@ -1,0 +1,16 @@
+s.ajax({
+type:'POST',
+url:'localhost 127.0.0.0',
+data:{
+Firrst Name:$('#First Name').val(),
+Last Name:$('#Last Name').val(),
+Email:$('#Email).val(),
+password:$('#password').val(),
+},
+sucess:function(){
+
+
+
+
+}
+});

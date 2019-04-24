@@ -1,0 +1,28 @@
+<?php
+
+header("content-type:application/json;charset=utf-8")
+
+
+$error = false;
+
+$First Name = $_POST['First Name'];
+$Last Name = $_POST['Last Name'];
+$Email = $_POST['Email'];
+$password= $_POST['password'];
+
+
+if(empty($First Name) ||(empty($Last Name) ||(empty($Email) ||(empty($password))
+$error = true;
+
+
+if($error==false) {
+$data['response']="succes";
+$data['content']="Thank you!! your details has been registered sucessfully";
+}
+else
+{
+$data['response']="error";
+$data['content']="your message has not been sent ,please complete all required fields";
+}
+
+echo json_encode($data);
